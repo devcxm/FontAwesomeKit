@@ -26,6 +26,7 @@
 		63C94B4D1BD6DDD800C5EFE5 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC0334EC18151CED00CFB044 /* foundation-icons.ttf */; };
 		63C94B4E1BD6DDD800C5EFE5 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC2144B119433643004051F6 /* FontAwesome.otf */; };
 		63C94B4F1BD6DDD800C5EFE5 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC0334ED18151CED00CFB044 /* zocial-regular-webfont.ttf */; };
+		C22BCA0321E4488800871130 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22BCA0221E4488800871130 /* Launch Screen.storyboard */; };
 		CC0334EE18151CED00CFB044 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E318151CED00CFB044 /* FAKFontAwesome.m */; };
 		CC0334EF18151CED00CFB044 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E518151CED00CFB044 /* FAKFoundationIcons.m */; };
 		CC0334F018151CED00CFB044 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E718151CED00CFB044 /* FAKIcon.m */; };
@@ -73,6 +74,7 @@
 		63C94B3D1BD6DDB400C5EFE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63C94B3F1BD6DDB400C5EFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE9E62E8A19471282938E14 /* libPods-FontAwesomeKitExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FontAwesomeKitExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22BCA0221E4488800871130 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CC0334E218151CED00CFB044 /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
 		CC0334E318151CED00CFB044 /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
 		CC0334E418151CED00CFB044 /* FAKFoundationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFoundationIcons.h; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				CCFF2D2F18114A1E0003CFE3 /* AppIcon */,
 				CC44A86716CD9B3F0039E101 /* AppDelegate.h */,
 				CC44A86816CD9B3F0039E101 /* AppDelegate.m */,
+				C22BCA0221E4488800871130 /* Launch Screen.storyboard */,
 				CCFF2D29181144E80003CFE3 /* Main.storyboard */,
 				CC44A85F16CD9B3F0039E101 /* Supporting Files */,
 			);
@@ -354,6 +357,10 @@
 					63C94B2E1BD6DDB400C5EFE5 = {
 						CreatedOnToolsVersion = 7.1;
 					};
+					CC44A85416CD9B3F0039E101 = {
+						DevelopmentTeam = LRSN8GGDX4;
+						ProvisioningStyle = Manual;
+					};
 				};
 			};
 			buildConfigurationList = CC44A85016CD9B3F0039E101 /* Build configuration list for PBXProject "FontAwesomeKitExample" */;
@@ -399,6 +406,7 @@
 				CC0334F318151CED00CFB044 /* foundation-icons.ttf in Resources */,
 				CC44A86316CD9B3F0039E101 /* InfoPlist.strings in Resources */,
 				2F615A2B1B69884E004A7B1D /* Material-Design-Iconic-Font.ttf in Resources */,
+				C22BCA0321E4488800871130 /* Launch Screen.storyboard in Resources */,
 				CC44A86B16CD9B3F0039E101 /* Default.png in Resources */,
 				CCFF2D2A181144E80003CFE3 /* Main.storyboard in Resources */,
 				CC785E151BB31140001A143F /* octicons.ttf in Resources */,
@@ -561,7 +569,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -585,7 +593,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -595,11 +603,15 @@
 		CC44A87916CD9B3F0039E101 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LRSN8GGDX4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FontAwesomeKitExample/FontAwesomeKitExample-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/FontAwesomeKitExample/FontAwesomeKitExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = font.devcxm.com;
 				PRODUCT_NAME = FontAwesomeKitExample;
+				PROVISIONING_PROFILE_SPECIFIER = "chi MacMin Device Test";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -607,11 +619,15 @@
 		CC44A87A16CD9B3F0039E101 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FontAwesomeKitExample/FontAwesomeKitExample-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/FontAwesomeKitExample/FontAwesomeKitExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = font.devcxm.com;
 				PRODUCT_NAME = FontAwesomeKitExample;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -626,6 +642,7 @@
 				63C94B411BD6DDB400C5EFE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC44A85016CD9B3F0039E101 /* Build configuration list for PBXProject "FontAwesomeKitExample" */ = {
 			isa = XCConfigurationList;
